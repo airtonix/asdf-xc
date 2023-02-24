@@ -9,10 +9,15 @@
 
 # Contents
 
+- [asdf-xcfile  ](#asdf-xcfile--)
+- [Contents](#contents)
 - [Dependencies](#dependencies)
 - [Install](#install)
 - [Contributing](#contributing)
 - [License](#license)
+  - [Tasks](#tasks)
+    - [setup-dev](#setup-dev)
+    - [install](#install-1)
 
 # Dependencies
 
@@ -59,3 +64,24 @@ Contributions of any kind welcome! See the [contributing guide](contributing.md)
 # License
 
 See [LICENSE](LICENSE) © [Zeno Jiricek](https://github.com/airtonix/)
+
+## Tasks
+
+### setup-dev
+
+Sets up local development on the plugin
+
+```sh
+rm -rf ~/.asdf/plugins/xc
+ln -s $(pwd) $HOME/.asdf/plugins/xc
+asdf list-all xc
+```
+
+### install
+
+installs plugin from asdf
+
+```sh
+asdf plugin remove xc
+asdf plugin add xc https://github.com/airtonix/asdf-xc.git
+```
