@@ -54,7 +54,6 @@ install_version() {
   local version="$2"
   local install_path="${3%/bin}/bin"
 
-
   if [ "${install_type}" != "version" ]; then
     fail "asdf-${TOOL_NAME} supports release installs only"
   fi
@@ -79,9 +78,9 @@ get_machine_os() {
   OS=$(uname -s | tr '[:upper:]' '[:lower:]')
 
   case "${OS}" in
-    darwin*) echo "darwin" ;;
-     linux*) echo "linux" ;;
-          *) fail "OS not supported: ${OS}" ;;
+  darwin*) echo "darwin" ;;
+  linux*) echo "linux" ;;
+  *) fail "OS not supported: ${OS}" ;;
   esac
 }
 
@@ -89,11 +88,11 @@ get_machine_arch() {
   local ARCH
   ARCH=$(uname -m)
   case "$ARCH" in
-       i?86) echo "386" ;;
-     x86_64) echo "amd64" ;;
-    aarch64) echo "arm64" ;;
-     armv8l) echo "arm64" ;;
-      arm64) echo "arm64" ;;
-          *) fail "Architecture not supported: $ARCH" ;;
+  i?86) echo "386" ;;
+  x86_64) echo "amd64" ;;
+  aarch64) echo "arm64" ;;
+  armv8l) echo "arm64" ;;
+  arm64) echo "arm64" ;;
+  *) fail "Architecture not supported: $ARCH" ;;
   esac
 }
