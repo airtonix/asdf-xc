@@ -1,15 +1,15 @@
 <div align="center">
 
-# asdf-xcfile [![Build](https://github.com/airtonix/asdf-xcfile/actions/workflows/build.yml/badge.svg)](https://github.com/airtonix/asdf-xcfile/actions/workflows/build.yml) [![Lint](https://github.com/airtonix/asdf-xcfile/actions/workflows/lint.yml/badge.svg)](https://github.com/airtonix/asdf-xcfile/actions/workflows/lint.yml)
+# asdf-xc [![Build](https://github.com/airtonix/asdf-xc/actions/workflows/build.yml/badge.svg)](https://github.com/airtonix/asdf-xc/actions/workflows/build.yml) [![Lint](https://github.com/airtonix/asdf-xc/actions/workflows/lint.yml/badge.svg)](https://github.com/airtonix/asdf-xc/actions/workflows/lint.yml)
 
 
-[xcfile](https://xcfile.dev/) plugin for the [asdf version manager](https://asdf-vm.com).
+[xc](https://xcfile.dev/) plugin for the [asdf version manager](https://asdf-vm.com).
 
 </div>
 
 # Contents
 
-- [asdf-xcfile  ](#asdf-xcfile--)
+- [asdf-xc  ](#asdf-xc--)
 - [Contents](#contents)
 - [Dependencies](#dependencies)
 - [Install](#install)
@@ -21,35 +21,33 @@
 
 # Dependencies
 
-**TODO: adapt this section**
-
 - `bash`, `curl`, `tar`: generic POSIX utilities.
-- `SOME_ENV_VAR`: set this environment variable in your shell config to load the correct version of tool x.
 
 # Install
 
 Plugin:
 
 ```shell
-asdf plugin add xcfile
+# asdf plugin add xc
+# waiting for PR
 # or
-asdf plugin add xcfile https://github.com/airtonix/asdf-xcfile.git
+asdf plugin add xc https://github.com/airtonix/asdf-xc.git
 ```
 
-xcfile:
+xc:
 
 ```shell
 # Show all installable versions
-asdf list-all xcfile
+asdf list-all xc
 
 # Install specific version
-asdf install xcfile latest
+asdf install xc latest
 
 # Set a version globally (on your ~/.tool-versions file)
-asdf global xcfile latest
+asdf global xc latest
 
-# Now xcfile commands are available
-xcfile --help
+# Now xc commands are available
+xc --help
 ```
 
 Check [asdf](https://github.com/asdf-vm/asdf) readme for more instructions on how to
@@ -59,13 +57,15 @@ install & manage versions.
 
 Contributions of any kind welcome! See the [contributing guide](contributing.md).
 
-[Thanks goes to these contributors](https://github.com/airtonix/asdf-xcfile/graphs/contributors)!
+[Thanks goes to these contributors](https://github.com/airtonix/asdf-xc/graphs/contributors)!
 
 # License
 
 See [LICENSE](LICENSE) © [Zeno Jiricek](https://github.com/airtonix/)
 
 ## Tasks
+
+This section is an actual task list for `xc`
 
 ### setup-dev
 
@@ -75,6 +75,7 @@ Sets up local development on the plugin
 rm -rf ~/.asdf/plugins/xc
 ln -s $(pwd) $HOME/.asdf/plugins/xc
 asdf list-all xc
+asdf install xc latest
 ```
 
 ### install
