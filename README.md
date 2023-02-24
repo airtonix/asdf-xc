@@ -1,7 +1,8 @@
 <div align="center">
 
-# asdf-xc [![Build](https://github.com/airtonix/asdf-xc/actions/workflows/build.yml/badge.svg)](https://github.com/airtonix/asdf-xc/actions/workflows/build.yml) [![Lint](https://github.com/airtonix/asdf-xc/actions/workflows/lint.yml/badge.svg)](https://github.com/airtonix/asdf-xc/actions/workflows/lint.yml)
+# asdf-xc
 
+[![Release](https://github.com/airtonix/asdf-xc/actions/workflows/release.yml/badge.svg)](https://github.com/airtonix/asdf-xc/actions/workflows/release.yml) [![Build](https://github.com/airtonix/asdf-xc/actions/workflows/build.yml/badge.svg)](https://github.com/airtonix/asdf-xc/actions/workflows/build.yml) [![Lint](https://github.com/airtonix/asdf-xc/actions/workflows/lint.yml/badge.svg)](https://github.com/airtonix/asdf-xc/actions/workflows/lint.yml)
 
 [xc](https://xcfile.dev/) plugin for the [asdf version manager](https://asdf-vm.com).
 
@@ -9,7 +10,7 @@
 
 # Contents
 
-- [asdf-xc  ](#asdf-xc--)
+- [asdf-xc](#asdf-xc)
 - [Contents](#contents)
 - [Dependencies](#dependencies)
 - [Install](#install)
