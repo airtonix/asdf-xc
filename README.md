@@ -17,7 +17,7 @@
 - [Contributing](#contributing)
 - [License](#license)
   - [Tasks](#tasks)
-    - [setup-dev](#setup-dev)
+    - [test](#test)
     - [install](#install-1)
 
 # Dependencies
@@ -66,17 +66,12 @@ See [LICENSE](LICENSE) © [Zeno Jiricek](https://github.com/airtonix/)
 
 ## Tasks
 
-This section is an actual task list for `xc`
+### test
 
-### setup-dev
-
-Sets up local development on the plugin
+Tests plugin commited logic.
 
 ```sh
-rm -rf ~/.asdf/plugins/xc
-ln -s $(pwd) $HOME/.asdf/plugins/xc
-asdf list-all xc
-asdf install xc latest
+asdf plugin test xc . 'xc --version'
 ```
 
 ### install
