@@ -9,13 +9,14 @@ concurrency:
   group: ${{ github.workflow }}-${{ github.ref }}
   cancel-in-progress: true
 
+permissions:
+  contents: write
+  pull-requests: write
+
 jobs:
   release-please:
     runs-on: ubuntu-latest
 
-    permissions:
-      contents: write
-      pull-requests: write
 
     steps:
       - uses: GoogleCloudPlatform/release-please-action@v2
